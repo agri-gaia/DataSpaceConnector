@@ -69,6 +69,8 @@ public class FsVault implements Vault {
             try (Writer writer = Files.newBufferedWriter(vaultFile)) {
                 properties.store(writer, null);
             } catch (IOException e) {
+                System.out.println("FsVault: " + e.getMessage());
+                System.out.println("FsVault: " + e.getStackTrace());
                 return Result.failure(e.getMessage());
             }
         }

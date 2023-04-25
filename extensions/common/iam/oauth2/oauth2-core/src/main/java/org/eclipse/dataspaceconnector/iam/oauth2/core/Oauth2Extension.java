@@ -163,10 +163,15 @@ public class Oauth2Extension implements ServiceExtension {
 
     private Oauth2Configuration createConfig(ServiceExtensionContext context) {
         var providerAudience = context.getSetting(PROVIDER_AUDIENCE, context.getConnectorId());
+        System.out.println("OAuth2Extension: " + providerAudience);
         var tokenUrl = context.getConfig().getString(TOKEN_URL);
+        System.out.println("OAuth2Extension: " + tokenUrl);
         var publicKeyAlias = context.getConfig().getString(PUBLIC_KEY_ALIAS);
+        System.out.println("OAuth2Extension: " + publicKeyAlias);
         var privateKeyAlias = context.getConfig().getString(PRIVATE_KEY_ALIAS);
+        System.out.println("OAuth2Extension: " + privateKeyAlias);
         var clientId = context.getConfig().getString(CLIENT_ID);
+        System.out.println("OAuth2Extension: " + clientId);
         return Oauth2Configuration.Builder.newInstance()
                 .identityProviderKeyResolver(providerKeyResolver)
                 .tokenUrl(tokenUrl)

@@ -1,0 +1,21 @@
+{
+  "asset": {
+    "id" : "kartoffeln.zip",
+    "properties": {
+      "asset:prop:id" : "kartoffeln.zip",
+      "asset:prop:name" : "asset-name.txt",
+      "asset:prop:description" : "Some description",
+      "asset:prop:version" : "1.0",
+      "asset:prop:contenttype" : "dataset"
+    }
+  },
+  "dataAddress": {
+    "properties": {
+      "type": "AmazonS3",
+      "region": "us-east-1",
+      "bucketName": "bucket1",
+      "assetName": "kartoffeln.zip",
+      "keyName": "kartoffeln.zip"
+    }
+  }
+}

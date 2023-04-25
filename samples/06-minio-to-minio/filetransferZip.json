@@ -1,0 +1,21 @@
+{
+  "connectorAddress": "http://localhost:8282/api/v1/ids/data",
+  "protocol": "ids-multipart",
+  "connectorId": "provider",
+  "assetId": "kartoffeln.zip",
+  "contractId": "3a75736e-001d-4364-8bd4-9888490edb58:929c4679-16df-4bd0-8cfa-67294ba0a58e",
+  "dataDestination": {
+    "properties": {
+      "type": "AmazonS3",
+      "region": "us-east-1",
+      "bucketName": "twamhof",
+      "assetName": "kartoffeln2.zip",
+      "endpoint": "http://localhost:9000"
+    }
+  },
+  "managedResources": true,
+  "transferType": {
+    "contentType": "application/octet-stream",
+    "isFinite": true
+  }
+}

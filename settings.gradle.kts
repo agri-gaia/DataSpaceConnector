@@ -60,8 +60,14 @@ include(":extensions:control-plane:api:data-management:policydefinition-api")
 include(":extensions:control-plane:api:data-management:transferprocess-api")
 include(":extensions:common:api:observability")
 include(":extensions:data-plane:data-plane-s3")
+findProject(":extensions:data-plane:data-plane-minio")?.name = "data-plane-minio"
+include(":extensions:data-plane:data-plane-minio")
 include(":extensions:common:aws:s3-core")
+findProject(":extensions:common:minio:minio-core")?.name = "minio-core"
+include(":extensions:common:minio:minio-core")
+findProject(":extensions:control-plane:provision:minio-provision")?.name = "minio-provision"
 include(":extensions:control-plane:provision:s3-provision")
+include(":extensions:control-plane:provision:minio-provision")
 include(":extensions:common:aws:aws-test")
 include(":extensions:common:azure:blob-core")
 include(":extensions:control-plane:provision:blob-provision")
@@ -182,6 +188,9 @@ include(":samples:05-file-transfer-cloud:consumer")
 include(":samples:05-file-transfer-cloud:provider")
 include(":samples:05-file-transfer-cloud:transfer-file")
 
+include(":samples:06-minio-to-minio:consumer")
+include(":samples:06-minio-to-minio:vault")
+
 include(":system-tests:e2e-transfer-test:runner")
 include(":system-tests:e2e-transfer-test:backend-service")
 include(":system-tests:e2e-transfer-test:control-plane")
@@ -202,3 +211,12 @@ include(":tooling:module-domain")
 include(":tooling:module-processor")
 include(":tooling:module-processor-extension-test")
 include(":tooling:module-processor-spi-test")
+include("minio-provision")
+include("extensions:control-plane:provision:minio-provision")
+findProject(":extensions:control-plane:provision:minio-provision")?.name = "minio-provision"
+include("extensions:common:minio")
+findProject(":extensions:common:minio")?.name = "minio"
+include("extensions:common:minio:minio-core")
+findProject(":extensions:common:minio:minio-core")?.name = "minio-core"
+include("extensions:data-plane:data-plane-minio")
+findProject(":extensions:data-plane:data-plane-minio")?.name = "data-plane-minio"

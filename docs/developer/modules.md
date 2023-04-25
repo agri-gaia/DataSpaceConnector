@@ -34,9 +34,11 @@ org.eclipse.dataspaceconnector:data-plane-api:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:data-plane-azure-storage:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:data-plane-azure-data-factory:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:data-plane-http:0.0.1-milestone-6
+org.eclipse.dataspaceconnector:data-plane-minio:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:data-plane-s3:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:data-plane-selector-api:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:data-plane-selector-client:0.0.1-milestone-6
+org.eclipse.dataspaceconnector:default-vault:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:auth-spi:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:catalog-spi:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:core-spi:0.0.1-milestone-6
@@ -74,6 +76,7 @@ org.eclipse.dataspaceconnector:jetty:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:jetty-micrometer:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:decentralized-identity:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:iam-mock:0.0.1-milestone-6
+org.eclipse.dataspaceconnector:minio-core:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:jdk-logger-monitor:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:common-sql:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:lease-sql:0.0.1-milestone-6
@@ -87,6 +90,7 @@ org.eclipse.dataspaceconnector:data-plane-transfer-client:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:data-plane-transfer-sync:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:blob-provision:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:http-provisioner:0.0.1-milestone-6
+org.eclipse.dataspaceconnector:minio-provision:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:s3-provision:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:fcc-node-directory-cosmos:0.0.1-milestone-6
 org.eclipse.dataspaceconnector:dummy-credentials-verifier:0.0.1-milestone-6
