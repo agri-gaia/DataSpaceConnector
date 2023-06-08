@@ -84,7 +84,7 @@ public class Oauth2ServiceImpl implements IdentityService {
 
         var assertion = jwtCreationResult.getContent().getToken();
 
-        System.out.println(assertion);
+//        System.out.println(assertion);
 
         var requestBodyBuilder = new FormBody.Builder()
                 .add("client_assertion_type", ASSERTION_TYPE)
