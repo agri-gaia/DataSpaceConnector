@@ -21,6 +21,9 @@ rootProject.name = "dataspaceconnector"
 include(":common:util")
 include(":common:state-machine-lib")
 
+include(":policy:policy-01-contract-negotiation:policy-contract-negotiation-policy-functions")
+include(":policy:policy-01-contract-negotiation:policy-contract-negotiation-connector")
+
 // EDC core modules
 include(":core:common:base")
 include(":core:common:boot")
