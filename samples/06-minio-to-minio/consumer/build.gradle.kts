@@ -39,14 +39,11 @@ dependencies {
 
     implementation(project(":extensions:common:iam:oauth2:oauth2-core"))
     implementation(project(":extensions:common:vault:filesystem-vault"))
-    //implementation(project(":extensions:common:iam:iam-mock"))
 
     implementation(project(":extensions:common:auth:auth-tokenbased"))
     implementation(project(":extensions:control-plane:api:data-management"))
-
     implementation(project(":data-protocols:ids"))
-
-    //implementation(project(":samples:06-minio-to-minio:vault"))
+    implementation(project(":policy:policy-01-contract-negotiation"))
 }
 
 application {
